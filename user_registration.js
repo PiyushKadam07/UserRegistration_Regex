@@ -63,3 +63,16 @@ try {
 catch(e) {
     console.error(e);
 }
+
+//uc6_password2 Rule2 – Should have at least 1 Upper Case
+var password2 = "Qwerty89";
+var regx = /^[A-Z]([a-zA-Z0-9]{7})$/;
+console.log("****** Password ******");
+try {
+    validation(password2, regx);
+    var alt = "@wertyu8";
+    validation(alt,regx);
+    }
+catch(e) {
+    console.error(e);
+}
