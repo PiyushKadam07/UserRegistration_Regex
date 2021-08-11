@@ -54,7 +54,7 @@ catch(e) {
 //uc5_password1 User need to follow pre-defined Password rules.Rule1 – minimum 8 Characters
 var password1 = "qwerty89";
 var regx = /^[a-zA-Z0-9]{8}$/;
-console.log("****** Password ******");
+console.log("****** Password-1 ******");
 try {
     validation(password1, regx);
     var alt = "@wertyu8";
@@ -67,9 +67,22 @@ catch(e) {
 //uc6_password2 Rule2 – Should have at least 1 Upper Case
 var password2 = "Qwerty89";
 var regx = /^[A-Z]([a-zA-Z0-9]{7})$/;
-console.log("****** Password ******");
+console.log("****** Password-2 ******");
 try {
     validation(password2, regx);
+    var alt = "@wertyu8";
+    validation(alt,regx);
+    }
+catch(e) {
+    console.error(e);
+}
+
+//uc7_password3 Rule3 – Should have at least 1 numeric number in the password
+var password3 = "Q7wertyu";
+var regx = /^[A-Z][\d]?([a-zA-Z0-9]{7})([\w]+)?$/;
+console.log("****** Password-3 ******");
+try {
+    validation(password3, regx);
     var alt = "@wertyu8";
     validation(alt,regx);
     }
