@@ -38,3 +38,14 @@ try {
 catch(e) {
     console.error(e);
 }
+
+//uc4_valid_mobile Country code follow by space and 10 digit number
+var mobile = "91 9876543210";
+var regx = /^[9][1][\s][6789][\d]{9}$/;
+console.log(mobile);
+try {
+    validation(mobile, regx);
+    }
+catch(e) {
+    console.error(e);
+}
