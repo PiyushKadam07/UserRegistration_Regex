@@ -27,3 +27,14 @@ try {
 catch(e) {
     console.error(e);
 }
+
+//uc3_valid_email user email 
+var email = "abc.xyz@bl.co.in";
+console.log(email);
+var regx = /^([\w]+)(.)([\w]+)?(@)([\w]+)(.)([\w]{2,3})(.)?([\w]{2,3})?$/;
+try {
+    validation(email,regx);
+    }
+catch(e) {
+    console.error(e);
+}
