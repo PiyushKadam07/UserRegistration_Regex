@@ -89,3 +89,16 @@ try {
 catch(e) {
     console.error(e);
 }
+
+//uc8_password4 Rule4 – Has exactly 1 Special Character
+var password4 = "Q7@wertyu3";
+var regx = /^[A-Z][\d]?([!@#$%^&*])([a-zA-Z0-9]{7})([\w]+)?$/;
+console.log("****** Password-4 ******");
+try {
+    validation(password4, regx);
+    var alt = "@wertyu8";
+    validation(alt,regx);
+    }
+catch(e) {
+    console.error(e);
+}
