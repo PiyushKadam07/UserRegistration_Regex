@@ -7,4 +7,3 @@ uc6_password2 Rule2 – Should have at least 1 Upper Case
 uc7_password3 Rule3 – Should have at least 1 numeric number in the password
 uc8_password4 Rule4 – Has exactly 1 Special Character
 
-
